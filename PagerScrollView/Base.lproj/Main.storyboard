@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LevelDescriptorViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="LevelDescriptorViewController" id="BYZ-38-t0r" customClass="LevelDescriptorViewController" customModule="PagerScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8MC-aS-Anv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9VO-fz-HAN"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8MC-aS-Anv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7eE-EB-oAq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8MC-aS-Anv" secondAttribute="bottom" id="O8O-9m-auJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8MC-aS-Anv" secondAttribute="trailing" id="Paz-sc-tyg"/>
+                            <constraint firstItem="8MC-aS-Anv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iYS-er-LcZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="8MC-aS-Anv" id="5dA-5K-5pg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="78"/>
+        </scene>
+        <!--LevelDescriptionViewController-->
+        <scene sceneID="7dT-cx-KQs">
+            <objects>
+                <viewController storyboardIdentifier="LevelDescriptionViewController" title="LevelDescriptionViewController" id="lkh-RZ-nA8" customClass="LevelDescriptionViewController" customModule="PagerScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vbE-fu-ky7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikb-bX-dBV">
+                                <rect key="frame" x="0.0" y="84" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="M8C-cn-15Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE0-fr-ONi">
+                                <rect key="frame" x="0.0" y="134" width="414" height="728"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mwD-SS-Waf" firstAttribute="bottom" secondItem="ZE0-fr-ONi" secondAttribute="bottom" id="3av-or-3u4"/>
+                            <constraint firstItem="ZE0-fr-ONi" firstAttribute="leading" secondItem="mwD-SS-Waf" secondAttribute="leading" id="4tD-eN-siU"/>
+                            <constraint firstItem="ZE0-fr-ONi" firstAttribute="top" secondItem="Ikb-bX-dBV" secondAttribute="bottom" id="8WB-Da-aYc"/>
+                            <constraint firstItem="mwD-SS-Waf" firstAttribute="trailing" secondItem="Ikb-bX-dBV" secondAttribute="trailing" id="GOA-N9-s5n"/>
+                            <constraint firstItem="Ikb-bX-dBV" firstAttribute="leading" secondItem="mwD-SS-Waf" secondAttribute="leading" id="TLg-Zt-h8q"/>
+                            <constraint firstItem="mwD-SS-Waf" firstAttribute="trailing" secondItem="ZE0-fr-ONi" secondAttribute="trailing" id="shN-fC-LAv"/>
+                            <constraint firstItem="Ikb-bX-dBV" firstAttribute="top" secondItem="mwD-SS-Waf" secondAttribute="top" constant="40" id="u9r-B4-AOy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mwD-SS-Waf"/>
+                    </view>
+                    <connections>
+                        <outlet property="levelDescriptionLabel" destination="ZE0-fr-ONi" id="xmU-SR-0F2"/>
+                        <outlet property="levelNameLabel" destination="Ikb-bX-dBV" id="P9V-cI-Z4o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckB-76-pop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="-54"/>
+        </scene>
+    </scenes>
+</document>
